@@ -8,6 +8,7 @@ import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
 
 import "./styles/projects.css";
+import "./styles/homepage.css";
 
 const Projects = () => {
 	useEffect(() => {
@@ -44,7 +45,7 @@ const Projects = () => {
 							feedback.
 						</div>
 
-						<div className="projects-list">
+						<div className="homepage-projects">
 							<AllProjects />
 						</div>
 					</div>

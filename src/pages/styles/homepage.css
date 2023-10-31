@@ -80,6 +80,7 @@
 	border-radius: 50%;
 	box-shadow: -3px -3px 7px #f5f5f5, 3px 3px 7px #bbc3cc;
 }
+
 .front {
 	font-size: 25px;
 	transition: color 0.2s ease-in-out;
@@ -93,6 +94,7 @@ a {
 .back {
 	transition: all 0.2s ease-in-out;
 }
+
 .back:hover {
 	transform: scale(1.2);
 }
@@ -108,25 +110,25 @@ a {
 	display: flex;
 }
 
-.homepage-projects {
+/* .homepage-projects {
 	flex-basis: 300px;
 	padding-top: 40px;
-}
+} */
 
-.homepage-articles {
+/* .homepage-articles {
 	flex-basis: 900px;
 	padding-top: 30px;
 	margin-left: -30px;
-}
+} */
 
 .homepage-article {
 	padding-bottom: 5px;
 }
 
-.homepage-works {
+/* .homepage-works {
 	flex-basis: 600px;
 	padding-top: 30px;
-}
+} */
 
 @media (max-width: 1024px) {
 	.homepage-first-area {
@@ -135,7 +137,8 @@ a {
 
 	.homepage-first-area-left-side {
 		display: flex;
-		flex-direction: column; /* Changed: set direction to column */
+		flex-direction: column;
+		/* Changed: set direction to column */
 		align-items: flex-start;
 		width: 100%;
 		order: 2;
@@ -169,17 +172,76 @@ a {
 		flex-direction: column;
 	}
 
-	.homepage-projects {
+	/* .homepage-projects {
 		flex-basis: auto;
-	}
+	} */
 
-	.homepage-articles {
+	/* .homepage-articles {
 		flex-basis: auto;
-	}
+	} */
 
-	.homepage-works {
+	/* .homepage-works {
 		flex-basis: auto;
 		margin-left: -25px;
 		margin-right: -25px;
+	} */
+}
+
+
+.homepage-after-title {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/* Adjust the alignment as needed */
+}
+
+.homepage-articles {
+	flex-basis: 900px;
+	padding-top: 30px;
+	margin-left: -30px;
+	box-sizing: border-box;
+}
+
+.homepage-works {
+	flex-basis: 600px;
+	padding-top: 30px;
+	margin-left: -25px;
+	margin-right: -25px;
+	box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+	.homepage-articles,
+	.homepage-works {
+		flex-basis: 100%;
+		/* Set the flex basis to 100% to make items take the full width on smaller screens */
+		margin-left: 0;
+		/* Remove negative margin on smaller screens */
+		margin-right: 0;
+		/* Remove negative margin on smaller screens */
+	}
+}
+
+.homepage-projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	/* Adjust the alignment as needed */
+	padding-top: 40px;
+}
+
+.homepage-projects .all-projects-project {
+	flex-basis: 300px;
+	/* Adjust this value as needed */
+	padding: 10px;
+	/* Adjust the padding as needed */
+	box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+	.homepage-projects .all-projects-project {
+		flex-basis: 100%;
+		/* Set the flex basis to 100% to make items take the full width on smaller screens */
 	}
 }
